@@ -17,7 +17,7 @@
     <link href="css/inpage_published.css" rel="stylesheet">
     <meta name="“robots”" content="“noindex”"><script type="text/javascript" async="" defer="" src="js/matomo.js"></script>
 	
-<!-- Meta Pixel Code -->
+	<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -39,7 +39,154 @@ src="https://www.facebook.com/tr?id=2026877751029359&ev=PageView&noscript=1"
     
      <script src="js/e7647a48d4.js" crossorigin="anonymous"></script>
      
-<div id="page-container" data-gp-page-id="Y7PvwrBAW">
+     
+     
+     <script type="text/javascript">
+        window.websiteurl = "https://yourgoodhealth.online/";
+        var megamenuEvent = new Event('megamenuLoaded');
+
+        function setPageUrl(button,page,queryString) {
+          var pageUrl = site.pages[page]?.url;
+          button.setAttribute('href', pageUrl + (queryString || ''));
+        }
+
+        function urlWithQueryParam(linkHREF) {
+      if( linkHREF.match(/^(http|https)?:\/\//i) ) {
+        var newQuery = window.location.search.substring(1);
+        if (linkHREF.includes(newQuery)) return linkHREF;
+        var baseLink = linkHREF.split('?')[0];
+        var existingQuery = linkHREF.split('?')[1] || '';
+        var hash = baseLink.split('#')[1] || existingQuery.split('#')[1] || '';
+        baseLink = baseLink.split('#')[0];
+        existingQuery = existingQuery.split('#')[0];
+        newQuery = newQuery ? '&' + newQuery : '';
+    
+        var hashStr = hash ? '#' + hash : '';
+        var queryStr = existingQuery || newQuery ? '?' + existingQuery + newQuery : '';
+    
+        return baseLink + queryStr + hashStr;
+      }
+
+      return linkHREF;
+    }
+
+        
+      function openQuickPopup(id,config,popupFrame) {
+        const popupClosebutton = '<button class="quick-popup-close-'+(config.closeButton || 'small')+'"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>Close</title><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="#dcdcea" stroke="#dcdcea"><line fill="none" stroke="#dcdcea" stroke-miterlimit="10" x1="27" y1="5" x2="5" y2="27"></line> <line fill="none" stroke="#dcdcea" stroke-miterlimit="10" x1="27" y1="27" x2="5" y2="5"></line></g></svg></button>';
+        
+        if( document.body.classList.contains('gpblsh') ) {
+          if( !document.querySelector('[data-gp-quick-popup-id="'+id+'"]') ) {
+            var quickPopupWrapper = document.createElement('div');
+            quickPopupWrapper.setAttribute('data-gp-quick-popup-id', id);
+            quickPopupWrapper.classList.add('hidden-popup');
+
+            var quickPopupWrapperInner = document.createElement('div');
+            quickPopupWrapperInner.innerHTML = popupClosebutton;
+            quickPopupWrapperInner.style = "width:"+(config.width || 625)+"px";
+
+            popupFrame.classList.add('popupframe');
+            quickPopupWrapperInner.prepend(popupFrame);
+            quickPopupWrapper.prepend(quickPopupWrapperInner);
+        
+            document.body.prepend(quickPopupWrapper);
+            quickPopupWrapper.classList.remove('hidden-popup');
+
+
+            if (config.appearingAnimation) {
+              quickPopupWrapper.children[0].classList.add(config.appearingAnimation);
+              quickPopupWrapper.children[0].classList.add('animated');
+            }
+
+            quickPopupWrapper.addEventListener('click', e => {
+              if(config.leavingAnimation) {
+                quickPopupWrapper.children[0].classList.add(config.leavingAnimation);
+                quickPopupWrapper.children[0].classList.add('animated');
+                setTimeout(() => {
+                    quickPopupWrapper.children[0].classList.remove(config.leavingAnimation);
+                    quickPopupWrapper.classList.add('hidden-popup');
+                },1000);
+              } else {
+                quickPopupWrapper.classList.add('hidden-popup');
+              }
+            });
+          } else {
+            document.querySelector('[data-gp-quick-popup-id="'+id+'"]').classList.remove('hidden-popup');
+          }
+        }
+      }
+     </script>
+     <script>window.site||window.encodeSite||(window.encodeSite=function(e,s){return e.pages=JSON.parse(atob(e.pages)),window.site=function(e){try{const s={...e.pages}||{};return new Proxy({},{})instanceof Object?(delete e.pages,e.isProxy=!0,new Proxy(e,{pages:s,get(e,s){return"pages"===s&&s in this.pages?this.pages[s]:"pages"===s?this.pages:s in e?e[s]:void 0},set:(e,s,t)=>(e[s]=t,!0)})):void 0}catch(e){}const s={...e.pages}||{};if(new Proxy({},{})instanceof Object)return delete e.pages,e.isProxy=!0,new Proxy(e,{pages:s,get(e,s){return"pages"===s&&s in this.pages?this.pages[s]:"pages"===s?this.pages:s in e?e[s]:void 0},set:(e,s,t)=>(e[s]=t,!0)})}(e),window.site});</script>
+     
+        
+      <!-- Matomo -->
+      <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(["setCookieDomain", "*.localhost"]);
+        _paq.push(["setDomains", ["*.localhost"]]);
+        _paq.push(['setCustomDimension', 1, "61fbf569c9e6331d6733fa4a"]);
+        _paq.push(['setCustomDimension', 2, "Y7PvwrBAW"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//matomo.groovetech.io/";
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId', '4']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+      <noscript><p><img src="//matomo.groovetech.io/matomo.php?idsite=4&rec=1" style="border:0;" alt="" /></p></noscript>
+      <!-- End Matomo Code -->
+      <link data-gp-stylesheet="" href="css/sdefender2.css" rel="stylesheet">
+        </head>
+      <body data-gp-site-id="61fbf569c9e6331d6733fa4a" data-gp-style="" class="gpblsh">
+        <!-- Start Popups -->
+        <script> if(!window.mergeContentSettings) { function mergeContentSettings(){}}</script>
+        
+        <!-- End Popups -->
+        
+    
+    
+    <script id="IE-check">
+      (function() {
+        if (!!window.navigator.userAgent.match(/MSIE|Trident/)) {
+          document.getElementById("IE-warning").style.display = "block";
+        } else {
+          document.getElementById("IE-warning").remove();
+        }
+      })();
+    </script><div id="custom-top">
+      
+    </div><script>
+      (function() {
+        var populateSiteSettings = async function() {
+          if (window.encodeSite) {
+            const result = await encodeSite({"pages":"eyJQMDN6aHJabmkiOnsidXJsIjoic2hvcCJ9LCItYTBhUWNIRE8iOnsidXJsIjoicmV2aWV3cyJ9LCJsSVhzaWdzMTQiOnsidXJsIjoicmVmZXJlbmNlcyJ9LCJvcE54aWVSaGkiOnsidXJsIjoic2hpcHBpbmcifSwiR0lSN0kyR1Y4Ijp7InVybCI6ImNvbnRhY3QifSwiajd1WmhEOU8yIjp7InVybCI6ImFydGljbGVzIn0sIlVnWTgxZXdzdCI6eyJ1cmwiOiJhYm91dCJ9LCIwZ1BINXp5aTYiOnsidXJsIjoic2hpcHBpbmctY29weSJ9LCJqYlE5TGdqc3YiOnsidXJsIjoicHJpdmFjeS1wb2xpY3kifSwiX19SMk56OHlaIjp7InVybCI6ImZhcSJ9LCJETWt6UGtxb2kiOnsidXJsIjoiaG93LWl0LXdvcmtzIn0sIk41VWJpR1llTSI6eyJ1cmwiOiI3LWtleXMtdG8tZmVlbGluZy1oYXBwaWVyIn0sIjhvaUtlcV9ISiI6eyJ1cmwiOiIxMi1zY2llbmNlLWJhc2VkLXdlaWdodC1sb3NzLWhlYWxpbmctdGlwcyJ9LCI0aHcxRy1PS2kiOnsidXJsIjoibGVwdG8yIn0sIjZaVDFTM1pJaiI6eyJ1cmwiOiJjYXVzZS1vZi1icmFpbi1mb2ctbG93LWVuZXJneS1oYWlyLWxvc3MifSwiVVh5ZFp2b21MIjp7InVybCI6ImluZGV4In0sImVwam5fWkg0MCI6eyJ1cmwiOiJsZXB0byJ9LCJvY01VVk9HTmciOnsidXJsIjoidG9uaWMyIn0sIm5nQVVDWmE3WCI6eyJ1cmwiOiJ0b25pYzNiIn0sIkZJcHhxUUlDSSI6eyJ1cmwiOiJ0b25pYzRiIn0sIjl4Y3BFT1lLZiI6eyJ1cmwiOiJ0b25pYzZiIn0sIjAySzZTNWxlVyI6eyJ1cmwiOiJ0b25pYzViIn0sIkJDSGhKdUVDaCI6eyJ1cmwiOiJ0b25pYzdiIn0sImhtN1FhUG9zTiI6eyJ1cmwiOiJ0b25pYzhiIn0sIlY0Y0g2UmVLbCI6eyJ1cmwiOiJ0b25pYzgifSwibFFWV3lib2tTIjp7InVybCI6InRvbmljOWIifSwiZk0wbjB4RHFlIjp7InVybCI6InRvbmljMTBiIn0sIkcwWnEwTDlEMCI6eyJ1cmwiOiJsYW5kaW5ncGFnZXMifSwiVU9fcUF2SkpEIjp7InVybCI6InRvbmljMTAifSwidnR3dzN0T1czIjp7InVybCI6InRvbmljOSJ9LCJ5VTdqYXFYbV8iOnsidXJsIjoidG9uaWM3In0sIlVsVU9vZ0ZnMCI6eyJ1cmwiOiJ0b25pYzYifSwiNDZvWlVPNWpBIjp7InVybCI6InRvbmljNSJ9LCJlUjk2Mm10VWIiOnsidXJsIjoidG9uaWM0In0sIm5oeUJQVHpZaSI6eyJ1cmwiOiJ0b25pYzMifSwiVEluYk9zZzRZIjp7InVybCI6InRvbmljIn0sInVuWllHOC11cSI6eyJ1cmwiOiJ0b25pYzExIn0sIkFyYUJMZmJSSiI6eyJ1cmwiOiJ0b25pYzExYiJ9LCJVRXNNQkxyX3kiOnsidXJsIjoiY2lyY2EifSwiNEcyRllMVE1hIjp7InVybCI6ImJhYnktYmVsbHktZml4MiJ9LCIwYjFxSmwxOWwiOnsidXJsIjoiYmFieS1iZWxseS1maXgifSwiR1c5amwzQXg4Ijp7InVybCI6ImJiLWV4aSJ9LCJCS2RneDJGdEMiOnsidXJsIjoid2wtZGlzY292ZXJ5In0sImpWNk80VW1yYiI6eyJ1cmwiOiJ3bC1pbmR1c3RyeSJ9LCI4SnR4WGdGRnQiOnsidXJsIjoiYmItZXhpMm9sZCJ9LCJiYW10cWdRVGEiOnsidXJsIjoidW5pLWV4aTMtb2xkIn0sIlJMLXpJWDB5RSI6eyJ1cmwiOiJiYi1leGkzIn0sIjRNTTJuaGg5ZyI6eyJ1cmwiOiJ1bmktZXhpMyJ9LCJUaG1qVzVMOVYiOnsidXJsIjoiYmItZXhpMiJ9LCJhU3J5Umx3SEciOnsidXJsIjoiYmItZXhpNCJ9LCJRUmNwZU13cVkiOnsidXJsIjoidW5pLWV4aS0yMiJ9LCJUNTJrLVR4THQiOnsidXJsIjoiYmItZXhpNSJ9LCJ4Wll4aGpUQ0siOnsidXJsIjoiYmItb3V0YmFjayJ9LCJpTVZYekxTLWUiOnsidXJsIjoidW5pLXRidXJuIn0sInpoZXBiVHJ3XyI6eyJ1cmwiOiJiYi1sYjEifSwiY2ZWSEh4VkRkIjp7InVybCI6ImJiLWV4aTYifSwiN0FHRzB0QmFoIjp7InVybCI6InByb3N0MSJ9LCJMV0VhbmJwNXUiOnsidXJsIjoicHJvc3RmbHV4In0sIlZjZk1Eem5TeSI6eyJ1cmwiOiJwcm8tMSJ9LCJRdVkwNmtMOTEiOnsidXJsIjoidGVldGgtcHJvIn0sIm8wZDA0T1A5RCI6eyJ1cmwiOiJpZ25pdGUifSwiVXRQaWV1OTZ4Ijp7InVybCI6InRlZXRoLXBybzIifSwiS2Y1LXZHNEhOIjp7InVybCI6InJlbGl2ZXIifSwiel9BeHZyV2J6Ijp7InVybCI6ImRlbnQtcHJvIn0sIkJvWmx4dzRVUyI6eyJ1cmwiOiJ0LWNsZWFuIn0sIkpMdHc2MXdJayI6eyJ1cmwiOiJ0LWNsZWFuMiJ9LCJ3LWdXeHpPNnciOnsidXJsIjoidGVldGgtcHJvMyJ9LCJfWllDenJ3WkYiOnsidXJsIjoiYWxwaTEifSwiSXVxalZ5VXJ6Ijp7InVybCI6InRlZXRoLXBybzQifSwiXzVkWVpTVmNXIjp7InVybCI6ImFscGkyIn0sIkRGc3JDejV0ciI6eyJ1cmwiOiJhbHBpLWhhbm5haCJ9LCJoc2dTSzF0bkQiOnsidXJsIjoiaGVhcmluZzEifSwiOHdwQjdIdVgtIjp7InVybCI6ImhlYXJpbmcyIn0sIlM1cWJqNjBoSCI6eyJ1cmwiOiJhbHBpLWhhbm5haC1jb3B5In0sIk5peC1KSTRickkiOnsidXJsIjoiYWxwaS1oYW5uYWgyIn0sImtQTkREQTdEWiI6eyJ1cmwiOiJhbHBpLWNsbiJ9LCJUTUdTT3hod1oiOnsidXJsIjoiYWxwaS1jbG4yIn0sIjFhajRPNnZDciI6eyJ1cmwiOiJ2ZXJ0aWdvMSJ9LCJMU0FwSEt0YkciOnsidXJsIjoiaGFubmFoZHVvMiJ9LCJuajBybkxLOGMiOnsidXJsIjoidC1oYW5wcm8ifSwibG9OdUE2M19VIjp7InVybCI6InByb3MxIn0sIjAtMElKNGNkNyI6eyJ1cmwiOiJkdW8tY2xuIn0sInlGQXF0dlFSNyI6eyJ1cmwiOiJxdWlldDEifSwiUlhuR25NY1NHIjp7InVybCI6InByb3MyIn0sImdaemg0SkpsciI6eyJ1cmwiOiJmbGV4LWxvc3MifSwiVDdVYU44emVNIjp7InVybCI6ImFscGktbG9zczMifSwiX1RGeTVkREZTIjp7InVybCI6InVsdHJhZHJvcHMifSwiRGlGckZFeDZXIjp7InVybCI6ImdiZXJyeTEifSwiTFo4WVpJSFZCIjp7InVybCI6Imd0cnVzdDEifSwiRlFtVy1vOFpEIjp7InVybCI6ImN0ZXhpMSJ9LCJoSlJEU1ozWXEiOnsidXJsIjoiZzI0In0sIndycmZ0c1EwZCI6eyJ1cmwiOiJndHJ1c3RoYW4xIn0sIndJY0ZnLWpKRyI6eyJ1cmwiOiJsaXYxIn0sIjN5amFUcUx1SiI6eyJ1cmwiOiJsaXYyY2xuIn0sIks2aURiMmd6QyI6eyJ1cmwiOiJsaXZoYW4ifSwidkFQa0xibFVFIjp7InVybCI6IndkbmExIn0sImI5aU1ZVE13SiI6eyJ1cmwiOiJ2Y2FsbTEifSwidHAwSloyS01CIjp7InVybCI6ImFiZnJlcSJ9LCIxN3VSeXRvLWgiOnsidXJsIjoibGl2MnBhdWxhIn0sIkNtNnB6MzRVZCI6eyJ1cmwiOiJhbHAyc2FyYWgifSwiX2wyZXAxQUtVIjp7InVybCI6InBzbGltMnBhdWxhIn0sImt1VFFSc3NCZCI6eyJ1cmwiOiJsYmlvbWUycGF1bGEifSwiRlhMM1NJVENZIjp7InVybCI6ImlrYXIycGF1bGEifSwiVVUtRjBNOVR2Ijp7InVybCI6ImN0ZXhpMiJ9LCJ4dVNDbEQ1bzciOnsidXJsIjoiaWthcjMifSwiUWswZHRmSnJ2Ijp7InVybCI6ImtlcmEifSwiSGwtaDRBYjhtIjp7InVybCI6ImVuZG8xIn0sIm5hNW9rSzNIZSI6eyJ1cmwiOiJyZWRiMSJ9LCJFSTB2clNpcEQiOnsidXJsIjoiZXBlYWsxIn0sIlBYalBZWnBTYyI6eyJ1cmwiOiJ0ZXJyYSJ9LCJackVJbUdLRzEiOnsidXJsIjoicmVkYjIifSwib3plbi13X3hpIjp7InVybCI6ImVwZWFrMiJ9LCJqejZ5RDR0Zm0iOnsidXJsIjoiZXBlYWtmIn0sIjEyaDhjZmQyZCI6eyJ1cmwiOiJlcGVhazMifSwiNl9JQmhWZWRhIjp7InVybCI6ImFscGhhMSJ9LCJOeWJRTXV1ZnoiOnsidXJsIjoicGJpdGUxIn0sInNTZDRRWXRmWSI6eyJ1cmwiOiJwZGVudDIzIn0sIkZYSi05RHo5NiI6eyJ1cmwiOiJlcGVhazFiZyJ9LCJleWYwdlFJSWYiOnsidXJsIjoiZ3RydXN0YmcifSwiOGZKdS0tajVJIjp7InVybCI6Imd0cnVzdGJnMiJ9LCJjc01KQTRzejkiOnsidXJsIjoiZ3RydXN0YmczIn0sIm94MW5GWlRsWSI6eyJ1cmwiOiJlcGVhazFiZzMifSwiZm0tdnQ4dEsxIjp7InVybCI6ImVwZWFrYmcyIn0sInBUYl9ja2c1YSI6eyJ1cmwiOiJlcGVha2JnMmEyIn0sIndGRE9TOUZnNCI6eyJ1cmwiOiJlcGVha2JnMmE1In0sInVfNWhrUlNwdiI6eyJ1cmwiOiJyZWRiYmcyYTUifSwidVg1REZxa1JEIjp7InVybCI6Im5lbzEifSwiVlBGYXlVcmltIjp7InVybCI6Im5lbzIifSwiU185b2Z3LTNVIjp7InVybCI6ImVwZWFrYmc0In0sIjFMeUVYVHR3OCI6eyJ1cmwiOiJuZW9hMiJ9LCJkM2liUm9YUEYiOnsidXJsIjoiZXBlYWtiZzRhIn0sInhvRmR3ZmxLNCI6eyJ1cmwiOiJuZW9hZGFjMiJ9LCJBcTYxV05OVGQiOnsidXJsIjoibmVvYWRhYzMifSwidVNhNUVlWXFnIjp7InVybCI6Im5lb2FkYWMzcG92In0sIlN0TmNHTFhZayI6eyJ1cmwiOiJuZW8zcG92In0sIi13R3NyNXdCMCI6eyJ1cmwiOiJuZW8zIn0sIl9JQ2N5UzZrayI6eyJ1cmwiOiJmZm1heDEifSwiaGRadFBmcFhkIjp7InVybCI6InB1cmF2MSJ9LCJBQ0xYWktYdWUiOnsidXJsIjoiZmZtYXgyIn0sIk9LOS1lb0FMWCI6eyJ1cmwiOiJmZm1heDFjYiJ9LCJzYnNLZWFBM0MiOnsidXJsIjoiZmFzdGxwMSJ9LCI2VzRVNUIzQXQiOnsidXJsIjoiZXhpMjMifSwiSDNqUWU5dFVaIjp7InVybCI6InBkaW5lMjMifSwiSFFBMDdncHZ1Ijp7InVybCI6ImZhc3RscDFtZiJ9LCJhWkE0M1p3RlYiOnsidXJsIjoiZXBlYWsxYmctY2xuIn0sInlidnFqN1JCRCI6eyJ1cmwiOiJsYmxpc3MxIn0sIlAwenI1Nmw1cyI6eyJ1cmwiOiJwdXJhLXF6MSJ9LCJRdWtLRjRya2siOnsidXJsIjoiZmZtYXgzIn0sImZZRFhycFE0ViI6eyJ1cmwiOiJuZW8zcG92MiJ9LCJ2aGdtUEppcWEiOnsidXJsIjoicGRlbnQyM2JnIn0sIkJybUd3U3g4MiI6eyJ1cmwiOiJkdG9uaWMxIn0sIl80VzZtc1hSdyI6eyJ1cmwiOiJwdXJhLXF6MiJ9LCI4UmJyMFJZNDMiOnsidXJsIjoicHVyYS1xejQifSwiczY3V29JRUtiIjp7InVybCI6InB1cmEtcXozIn0sIlJSd0lzNHNTayI6eyJ1cmwiOiJwdXJhLXF6NSJ9LCJWaVNsNGlDQVoiOnsidXJsIjoicHVyYS1xenJlc3VsdHMifSwiZkpuWU0yLWhfIjp7InVybCI6InNkZWZlbmRlciJ9LCJHYXJoLUQ2MGoiOnsidXJsIjoiZmx1eGFjdDEifSwiWTdQdndyQkFXIjp7InVybCI6InNkZWZlbmRlcjIifSwiY3FKRW5pLTR3Ijp7InVybCI6InN1bWExIn19","popups":[],"navigation":[{"url":"index","name":"Home","megamenu":null,"megamenuHideScreens":[],"megamenuAlignment":null,"megamenuMaxWidth":null,"children":[]},{"url":"shop","name":"Shop","megamenu":null,"megamenuHideScreens":[],"megamenuAlignment":null,"megamenuMaxWidth":null,"children":[]},{"url":"reviews","name":"Reviews","megamenu":null,"megamenuHideScreens":[],"megamenuAlignment":null,"megamenuMaxWidth":null,"children":[]},{"url":"references","name":"References","megamenu":null,"megamenuHideScreens":[],"megamenuAlignment":null,"megamenuMaxWidth":null,"children":[]},{"url":"shipping","name":"Shipping","megamenu":null,"megamenuHideScreens":[],"megamenuAlignment":null,"megamenuMaxWidth":null,"children":[]},{"url":"articles","name":"Articles","megamenu":null,"megamenuHideScreens":[],"megamenuAlignment":null,"megamenuMaxWidth":null,"children":[]},{"url":"contact","name":"Contact","megamenu":null,"megamenuHideScreens":[],"megamenuAlignment":null,"megamenuMaxWidth":null,"children":[]},{"url":"privacy-policy","name":"Privacy Policy","megamenu":null,"megamenuHideScreens":[],"megamenuAlignment":null,"megamenuMaxWidth":null,"children":[]},{"url":"alpi-hannah2","name":"Alpi Hannah2","megamenu":null,"megamenuHideScreens":[],"megamenuAlignment":null,"megamenuMaxWidth":null,"children":[]}],"baseURL":"https://v1.gdapis.com/api"}, "61fbf569c9e6331d6733fa4a");
+            if(!window.inBuilder && window.websiteurl) {
+              const separator = window.websiteurl.charAt(window.websiteurl.length-1) === '/'?'':'/';
+
+              for (const page in window.site.pages) {
+                window.site.pages[page].url = window.websiteurl + separator + window.site.pages[page]?.url;
+              }
+            }
+            if (window.site) window.encodeSite = undefined;
+            site.subscribed = [];
+            site.subscribe = callback => {
+              site.subscribed.push(callback);
+            };
+            var clearSiteCheck = setInterval(function() {
+              if (window.site.isProxy) {
+                window.dispatchEvent(new Event('load'));
+                clearInterval(clearSiteCheck);
+              }
+            }, 250);
+          }
+        };
+        document.readyState !== 'loading' ? populateSiteSettings() : document.addEventListener("DOMContentLoaded", populateSiteSettings);
+      })();
+    </script><div id="page-container" data-gp-page-id="Y7PvwrBAW">
       <div class="blocks-container" id="blocks-container">
         
         <section data-gp-style="" id="12Sx6G90Iu" class="gp-component gp-component-id-12Sx6G90Iu" data-gp-block="true" data-gp-component-id="12Sx6G90Iu" data-gp-component="null" tabindex="0"><a name="12Sx6G90Iu" data-gp-block-anchor=""></a><a name="12Sx6G90Iu" class="gp-component-id-ak0mSkcfD"></a>
@@ -51,7 +198,7 @@ src="https://www.facebook.com/tr?id=2026877751029359&ev=PageView&noscript=1"
         <div class="gp-component-id-HNwwNj468 gp-component" data-gp-container="" data-gp-style="" data-gp-dnd="" data-gp-component="container" data-gp-component-id="HNwwNj468" tabindex="0"><div class="gp-component gp-component-id-rKUzyLRKo" data-gp-dnd="" data-gp-style="" data-gp-component="layout-1" data-gp-component-id="rKUzyLRKo" tabindex="0">
       <div class="gp-component-id-qD_02222R0X">
         <div class="gp-component-id-XQ5lyogh9pw" data-gp-grid-col="">
-          <div class="gp-component gp-component-id-deDUltktl6" data-gp-container="" data-gp-style="" data-gp-component-id="deDUltktl6" data-gp-component="container" tabindex="0"><div class="gp-text-container gp-component gp-component-id-yUElS5iTW" data-gp-style="" data-gp-text="" data-gp-dnd="" data-gp-component-id="yUElS5iTW" data-gp-component="null" tabindex="0"><h1 class="gp-component-id-FooyHe5M6" data-id="quill-node-0"><strong class="gp-component-id-WxQ_92CQsw"> Bedtime 'Warm Water' Method Balances Blood Sugar Overnight</strong></h1></div><a class="gp-component gp-component-id-R9iaZeAdu cta" data-gp-button-id="XUOXuVjYA" data-gp-style="" data-gp-dnd="" href="https://www.sugardefender24.com/b/101.php?aff_id=223&amp;subid=[cmc_vid]" data-gp-component="image" data-gp-component-id="R9iaZeAdu" data-gp-classes="cta"><img src="images/aHR0cHM6Ly9hc3NldHMuZ3Jvb3ZlYXBwcy5jb20vaW1hZ2VzL2I1MDdhM2ZlLTg1ZGMtNDcxYy1hY2MyLTYzNTViNDRmYTE3Yi8xNjg4MDUyODM1X2xhbmRlcmlrYXJpYTFjb3B5LmpwZw.webp" alt="" class="object-cover object-center"> </a><div class="gp-text-container gp-component gp-component-id-9S_PJ9Q4d" data-gp-style="" data-gp-text="" data-gp-dnd="" data-gp-component-id="9S_PJ9Q4d" data-gp-component="null" tabindex="0"><p class="gp-component-id-KydrJl7T6">🔊 &nbsp;<strong class="gp-component-id-chrCvWaBIY">Make sure your sound is turned on. Please wait up to 10 seconds for the video to load.</strong></p></div><a href="https://www.sugardefender24.com/b/101.php?aff_id=223&amp;subid=[cmc_vid]" data-gp-button-id="Lue1iToFk" class="gp-component gp-component-id-W4ateQUQP cta" data-gp-style="" data-gp-dnd="" data-gp-component="button" data-gp-component-id="W4ateQUQP" data-gp-classes="cta">
+          <div class="gp-component gp-component-id-deDUltktl6" data-gp-container="" data-gp-style="" data-gp-component-id="deDUltktl6" data-gp-component="container" tabindex="0"><div class="gp-text-container gp-component gp-component-id-yUElS5iTW" data-gp-style="" data-gp-text="" data-gp-dnd="" data-gp-component-id="yUElS5iTW" data-gp-component="null" tabindex="0"><h1 class="gp-component-id-FooyHe5M6" data-id="quill-node-0"><strong class="gp-component-id-WxQ_92CQsw"> Bedtime 'Warm Water' Method Balances Blood Sugar Overnight</strong></h1></div><a class="gp-component gp-component-id-R9iaZeAdu cta" data-gp-button-id="XUOXuVjYA" data-gp-style="" data-gp-dnd="" href="https://www.sugardefender24.com/b/101.php?aff_id=223&amp;subid=[cmc_vid]" data-gp-component="image" data-gp-component-id="R9iaZeAdu" data-gp-classes="cta"><img src="images/aHR0cHM6Ly9hc3NldHMuZ3Jvb3ZlYXBwcy5jb20vaW1hZ2VzL2I1MDdhM2ZlLTg1ZGMtNDcxYy1hY2MyLTYzNTViNDRmYTE3Yi8xNjg4MDUyODM1X2xhbmRlcmlrYXJpYTFjb3B5LmpwZw.webp" alt="" class="object-cover object-center"> </a><div class="gp-text-container gp-component gp-component-id-9S_PJ9Q4d" data-gp-style="" data-gp-text="" data-gp-dnd="" data-gp-component-id="9S_PJ9Q4d" data-gp-component="null" tabindex="0"><p class="gp-component-id-KydrJl7T6">🔊�&nbsp;<strong class="gp-component-id-chrCvWaBIY">Make sure your sound is turned on. Please wait up to 10 seconds for the video to load.</strong></p></div><a href="https://www.sugardefender24.com/b/101.php?aff_id=223&amp;subid=[cmc_vid]" data-gp-button-id="Lue1iToFk" class="gp-component gp-component-id-W4ateQUQP cta" data-gp-style="" data-gp-dnd="" data-gp-component="button" data-gp-component-id="W4ateQUQP" data-gp-classes="cta">
     
     <div style="display: inline-block; flex-grow: 1;">
       <div class="gp-component gp-component-id-A_z54hRruX" data-gp-component="button main-label" data-gp-style="" data-gp-component-id="A_z54hRruX">Watch Now &gt;&gt;</div>
@@ -59,7 +206,7 @@ src="https://www.facebook.com/tr?id=2026877751029359&ev=PageView&noscript=1"
     </div>
     
     
-  </a><div class="gp-text-container gp-component-id-NqzR3w_4Be gp-component" data-gp-style="true" data-gp-text="true" data-gp-dnd="true" tabindex="0" data-gp-component-id="NqzR3w_4Be" data-gp-component="null"><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-0">A top diabetes Doctor reveals how just &nbsp;<strong class="gp-component-id-vOvMLjpn4W">one small tweak</strong> &nbsp;to your daily routine can start <strong class="gp-component-id-brZKxjXjc8">improving blood sugar levels</strong> within the first few days...</p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-1"><br class="gp-component-id-LLOE1ydUNB"></p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-2">People of all ages now following this <strong class="gp-component-id-Xs2DqI0kw5">simple 'bedtime routine'</strong> are seeing their glucose levels plummet, while at the same time suddenly <strong class="gp-component-id-zIKd6VnAJs">shedding stubborn pounds</strong> that they'd struggled with for years.</p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-3"><br class="gp-component-id-Pshs0J4FkA"></p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-4">Scientists believe it works so well because of the way it &nbsp;<strong class="gp-component-id-ko_osTjyQ8">powerfully targets</strong> &nbsp;what's now believed to be the <strong class="gp-component-id-czAWZvuxmm">main biological 'root cause'</strong> &nbsp;of erratic blood sugar, unlike expensive medication or restrictive diets.</p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-5"><br class="gp-component-id-ZvzR4bVOkH"></p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-6">The $multi-billion Pharmaceutical industry bosses <strong class="gp-component-id-H0cNZq0oRL">DO NOT</strong> want people viewing this information, so take the opportunity to watch it now before it's removed...</p></div><a href="https://www.sugardefender24.com/b/101.php?aff_id=223&amp;subid=[cmc_vid]" data-gp-button-id="X9tinQtu4" class="gp-component gp-component-id-IA9kRVV3k cta" data-gp-style="" data-gp-dnd="" data-gp-component="button" data-gp-component-id="IA9kRVV3k" data-gp-classes="cta">
+  </a><div class="gp-text-container gp-component-id-NqzR3w_4Be gp-component" data-gp-style="true" data-gp-text="true" data-gp-dnd="true" tabindex="0" data-gp-component-id="NqzR3w_4Be" data-gp-component="null"><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-0">A top diabetes Doctor reveals how just�&nbsp;<strong class="gp-component-id-vOvMLjpn4W">one small tweak</strong>�&nbsp;to your daily routine can start <strong class="gp-component-id-brZKxjXjc8">improving blood sugar levels</strong> within the first few days...</p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-1"><br class="gp-component-id-LLOE1ydUNB"></p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-2">People of all ages now following this <strong class="gp-component-id-Xs2DqI0kw5">simple 'bedtime routine'</strong> are seeing their glucose levels plummet, while at the same time suddenly <strong class="gp-component-id-zIKd6VnAJs">shedding stubborn pounds</strong> that they'd struggled with for years.</p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-3"><br class="gp-component-id-Pshs0J4FkA"></p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-4">Scientists believe it works so well because of the way it�&nbsp;<strong class="gp-component-id-ko_osTjyQ8">powerfully targets</strong>�&nbsp;what's now believed to be the <strong class="gp-component-id-czAWZvuxmm">main biological 'root cause'</strong>�&nbsp;of erratic blood sugar, unlike expensive medication or restrictive diets.</p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-5"><br class="gp-component-id-ZvzR4bVOkH"></p><p class="gp-component-id-6CMcjSZQp" data-id="quill-node-6">The $multi-billion Pharmaceutical industry bosses <strong class="gp-component-id-H0cNZq0oRL">DO NOT</strong> want people viewing this information, so take the opportunity to watch it now before it's removed...</p></div><a href="https://www.sugardefender24.com/b/101.php?aff_id=223&amp;subid=[cmc_vid]" data-gp-button-id="X9tinQtu4" class="gp-component gp-component-id-IA9kRVV3k cta" data-gp-style="" data-gp-dnd="" data-gp-component="button" data-gp-component-id="IA9kRVV3k" data-gp-classes="cta">
     
     <div style="display: inline-block; flex-grow: 1;">
       <div class="gp-component gp-component-id-EHMyp4NpNr" data-gp-component="button main-label" data-gp-style="" data-gp-component-id="EHMyp4NpNr">Watch Now &gt;&gt;</div>
@@ -170,11 +317,6 @@ src="https://www.facebook.com/tr?id=2026877751029359&ev=PageView&noscript=1"
             <div data-gp-component="navbar_1" data-gp-dnd="" data-gp-style="" class="gp-component gp-component-id-NxvXc02pze" data-gp-component-id="NxvXc02pze" tabindex="0">
 
                 <div class="gp-component-id-Q6Dhxj3xTh" data-gp-container="" tabindex="0">
-                    <div class="gp-component-id-DhQD71N9LU">
-                        <a href="#" class="gp-component-id-vsSl8bkoW_">
-                            <img src="images/1634569368_Landmark%20health%20logo.png" alt="" class="gp-component gp-component-id-8xVi6yH5mW" data-gp-style="" data-gp-dnd="" data-gp-classes="" data-gp-component="image" data-gp-component-id="8xVi6yH5mW" tabindex="0">
-                        </a>
-                    </div>
     
                     <div class="gp-component-id-QX0sh7ea6t">
     
