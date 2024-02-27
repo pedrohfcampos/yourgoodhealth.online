@@ -1,8 +1,15 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
 .headline {
     text-align: center;
     font-size: 12px;
     font-family: Poppins;   
     padding-top: 5px;
+}
+
+span{
+    color: rgb(255, 46, 46);
 }
 
 .imagem-topo {
