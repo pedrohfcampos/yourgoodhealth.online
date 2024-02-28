@@ -32,11 +32,15 @@ img {
     font-size: 10px;
     padding-bottom: 40px;
 }
+
 #texto-principal {
-    font-size: 35px !important;
     padding-top: 20px;
     padding-bottom: 20px;
     color: black !important;
+}
+
+.texto {
+    font-size: 30px !important;
 }
 
 .button-container {
