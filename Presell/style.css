@@ -39,10 +39,6 @@ img {
     color: black !important;
 }
 
-.texto {
-    font-size: 35px !important;
-}
-
 .button-container {
     display: flex;
     justify-content: center;
